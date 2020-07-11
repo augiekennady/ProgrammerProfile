@@ -11,6 +11,12 @@ main {
   background-color: #FFFFF6
   }
 
+footer {
+  background-color: #FFFFFF;
+  text-align: center;
+  font-family: monospace
+}
+
 h2 {
   font-family: Helvetica, Arial, sans-serif; 
   font-size: 24px;
