@@ -69,6 +69,12 @@ a:active { color: beige;}
 
 /* Finally, let's give this class a whirl */
 
+/* I looked up online how to center it, so I 'borrowed' everything after border-radius. :P */
+
 .image-circle {
-  border-radius: 50%
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
