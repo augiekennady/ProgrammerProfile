@@ -9,7 +9,7 @@ header, main, footer {
 h1 {
   font-family: Helvetica, Arial, sans-serif; 
   font-size: 36px;
-  height: 45px; 
+  min-height: 45px; 
   color: #000000;
   text-align: center;
   padding: 15px 15px 15px 15px; 
@@ -45,19 +45,31 @@ h3 {font-family: Helvetica, Arial, sans-serif;
   background-color:#ff8a14
 }
 
+ul, ol {
+  font-family: Helvetica, Arial, sans-serf;
+  font-size: 14px; 
+  color: #000000;
+  text-align: left
+}
+
 
 p {
   font-family: Helvetica, Arial, sans-serif; 
   font-size: 14px;
   color: #000000; 
-  text-align: justify
+  text-align: left
 }
 
 /* let's try the pseudoclass thing with links */
 
-a {
+a, .reference {
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.actual {
   font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif
 }
 
 a:link { color: #ff8a14;}
@@ -78,3 +90,4 @@ a:active { color: beige;}
   margin-right: auto;
   width: 50%;
 }
+
