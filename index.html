@@ -1,92 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-    <head>
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <title>Augie the Programmer</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   
   <body>
-    <!-- This is where the real code happens starting with the header --> 
+<!-- This is where the real code happens starting with the header --> 
 
     <header>
-    <h1> Augie the Programmer </h1> 
-    </header> 
+      <h1> Augie the Programmer </h1> 
+</header> 
 
-    <!-- Now we want to put all the main things in the body; a picture and several containers such as an intro, an about, and a means of contact --> 
+<!-- Now we want to put all the main things in the body; a picture and several containers such as an intro, an about, and a means of contact --> 
 
-    <main> 
+  <main> 
+<!-- Putting in a class for chunks that will serve as a group of content
+--> 
+<!-- Putting in a class for flexboxing called group, which will be broken into items --> 
 
-      <!-- First the image, which I will want to make a circle -->
+    <article id="home"> 
+    <div class="chunk">
 
-      <!-- To make it a circle, I have to assign it a class --> 
+      <div class ="group"> 
+        <div class="item">
+          <img src="images/augiecodes.jpg" class="image" width="500" alt="Augie codes things.">
+        </div>
 
+        <div class="item">
+          <h2 class="intro"> Hi! I'm Augie, and I Code Things! </h2> 
 
-      <img src="images/augiecodes.jpg" class="image-circle" width="500" alt="Augie codes things.">
-      
-      <!-- Now let's get into the intro --> 
+          <p> I'm a software developer living in Portland, Oregon.</p> 
 
+          <p> Given my background in e-commerce and education technology, I'm interested in:</p> 
+            <ul> 
+              <li> e-commerce stores </li> 
+              <li> online education </li> 
+              <li> educational gaming </li> 
+              <li> music education </li> 
+              <li> online music creation </li> 
+            </ul> 
 
-      <h2> Hi! I'm Augie, and I Code Things! </h2> 
-      <p> I'm a software developer living in Portland, Oregon.</p> 
-      <p> Given my background in e-commerce and education technology, I'm interested in:</p> 
-      <ul> 
-        <li> e-commerce stores </li> 
-        <li> online education </li> 
-        <li> educational gaming </li> 
-        <li> music education </li> 
-        <li> online music creation </li> 
-        <li> playing piano and ukulele </li>
-        <li> composing music </li> 
-        <li> writing abysmal screenplays and novels </li> 
-      </ul> 
-      <p> Please <a class="reference" href="#contact"> let me know </a> if you'd like to collaborate on a project! </p> 
+          <p> Please <a class="reference" href="#contact"> let me know </a> if you'd like to collaborate on a project! </p> 
 
-      <hr> 
+        </div>
+      </div>
+    </div>
+    </article> 
+  <hr> 
 
+<!-- Now it's time to talk about myself; should be pretty easy, since it's allegedly my favorite subject. :P  --> 
 
-      <!-- Now it's time to talk about myself; should be pretty easy, since it's allegedly my favorite subject. :P  --> 
+    <article id="About"> 
+    <div class="chunk"> 
+      <div class="group">
+        <div class="item">
+          <img src="images/porschey.jpg" alt="porschey worschey" class="image">
+        </div> 
+        <div class="item"> 
+          <h2> About Me </h2>
 
+          <p> I worked in the film industry for six years prior to attending Columbia University. Once in school, I focused on mathematics and film studies while dabbling in a myriad of other subjects.</p> 
 
-      <h2> About Me </h2>
+          <p> Upon graduation, I found it exceedingly difficult to get work, so I began tutoring! I tutored in many fields of mathematics, as well as economics, astronomy, physics, German, Japanese, film production, film editing, writing, and college application essays. </p> 
 
-      <p> I worked in the film industry for six years prior to attending Columbia University. Once in school, I focused on mathematics and film studies while dabbling in a myriad of other subjects.</p> 
-      <p> Upon graduation, I found it exceedingly difficult to get work, so I began tutoring! I tutored in many fields of mathematics, as well as economics, astronomy, physics, German, Japanese, film production, film editing, writing, and college application essays. </p> 
-      <p> This led to a job in customer support at Chegg, and I worked my way up from customer support to be the manager of business operations, which is what I do now! </p> 
-      <p> To support my lavish spending habits and thirst for new knowledge, I also have maintained side employment positions related to marketing e-commerce companies. </p> 
-      <p> I'm now working as a consultant in software development so I can learn more about e-commerce trends and hopefully help shape the future of both e-commerce and online education! </p> 
+          <p> This led to a job in customer support at Chegg, and I worked my way up from customer support to be the manager of business operations, which is what I do now! </p> 
 
-      <hr> 
+          <p> To support my lavish spending habits and thirst for new knowledge, I also have maintained side employment positions related to marketing e-commerce companies. </p> 
 
+          <p> I'm now working as a consultant in software development so I can learn more about e-commerce trends and hopefully help shape the future of both e-commerce and online education! </p> 
+
+          <p> Enjoy a picture of my dream car. :) </p> 
+        </div>
+       </div>   
+    </div>
+    </article> 
+  <hr> 
+
+<!-- Now we are going to have placeholders for my nonexistent portfolio --> 
+    <article id="portfolio">
+    <div class="chunk">
+      <h2>Portfolio</h2>
+      <div class='group'>
+
+        <div class='item'>
+          <img src="images/portfolio/placeholder.jpg" alt="Quiz App Screenshot" class="image">
+          <h3>Quiz App</h3>
+          <p>This is a description of the Quiz App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+        </div>
+
+        <div class='item'>
+          <img src="images/portfolio/placeholder.jpg" alt="Bookmark App Screenshot" class="image">
+          <h3>Bookmark App</h3>
+          <p>This is a description of the Bookmark App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+        </div>
+      </div>
+
+      <div class='group'>
+
+        <div class='item'>
+          <img src="images/portfolio/placeholder.jpg" alt="Pet App Screenshot" class="image">
+          <h3>Pet Appointment App</h3>
+          <p>This is a description of the Pet Appointment App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+        </div>
+
+        <div class='item'>
+          <img src="images/portfolio/placeholder.jpg" alt="Team Project Screenshot" class="image">
+          <h3>Team Project App</h3>
+          <p>This is a description of the Team Project App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+        </div>
+      </div>
+    </div>
+    </article> 
+  <hr> 
+  
 <!-- Now we want to make sure people know how to get ahold of me --> 
 
+    <article id="contact"> 
+    <div class="chunk"> 
       <h2> Hit Me Up </h2> 
-      <section id="contact"> 
-        
-        <!-- It looks like this section is tied to h2, is it not? --> 
-
-      <p> Get ahold of me. Let's build cool things together! </p> 
-      <ol> 
-        <li> <a class="actual" href="https://www.linkedin.com/in/akennady/"> LinkedIn </a> </li> 
-        <li> <a class="actual" href="https://github.com/augiekennady/"> GitHub </a> </li> 
-        <li> <a class="actual" href="mailto:akennady@chegg.com?subject=AugieSoCool"> Flattery </a> </li> 
-      </ol> 
-      <hr>
-      </section>
-
-    </main> 
-
-
+        <p> Get ahold of me. Let's build cool things together! </p> 
+          <ol> 
+            <li> <a class="actual" href="https://www.linkedin.com/in/akennady/"> LinkedIn </a> </li> 
+            <li> <a class="actual" href="https://github.com/augiekennady/"> GitHub </a> </li> 
+            <li> <a class="actual" href="mailto:akennady@chegg.com?subject=AugieSoCool"> Flattery </a> </li> 
+          </ol> 
+    </div>
+    </article> 
+  <hr>
+  </main> 
 
 <!-- Now we are going to build a footer that shows the copyright! --> 
+  <footer> 
+<!-- Check it out. I looked up how to get the copyright symbol in there! --> 
+    <h3> &#169; 2020 Augie Kennady </h3> 
+  </footer> 
 
-    <footer> 
-      <!-- Check it out. I looked up how to get the copyright symbol in there! --> 
-      <h3> &#169; 2020 Augie Kennady </h3> 
-    </footer> 
-
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
