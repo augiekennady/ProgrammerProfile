@@ -16,12 +16,43 @@ h1 {
   background-color:#ff8a14;
 }
 
+/* Main */
 
-/* I'm going to give the main and footer sections their own style, which I may overwrite with other elements and/or classes */
 
-main {
+main .main-class {
+  padding-left: 10px;
   background-color: #FFFFF6;
   }
+
+
+/* Mobile Firsting Main */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  Margin: 10px;
+}
+
+/* Desktopping Main */
+
+@media all and (min-width: 800px) {
+  .chunk {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+
+/* Footer */
+
 
 footer {
   background-color: #FFFFFF;
@@ -31,7 +62,7 @@ footer {
 
 /* now let's get into other sections */
 
-h2 {
+h2, .intro {
   font-family: Helvetica, Arial, sans-serif; 
   font-size: 24px;
   color: #000000;
@@ -60,7 +91,6 @@ p {
   text-align: left
 }
 
-/* let's try the pseudoclass thing with links */
 
 a, .reference {
   font-family: Helvetica, Arial, sans-serif;
@@ -78,16 +108,9 @@ a:hover { color: #148AFF;}
 a:active { color: beige;}
 
 
-
-/* Finally, let's give this class a whirl */
-
-/* I looked up online how to center it, so I 'borrowed' everything after border-radius. :P */
-
-.image-circle {
-  border-radius: 50%;
+.image {
+  border-radius: 10%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
+  margin: 10px;
+  width: 100%;
+  flex: 1
